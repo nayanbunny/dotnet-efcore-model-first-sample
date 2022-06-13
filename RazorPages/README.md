@@ -4,7 +4,13 @@
 
 </div>
 
-> [`ADO.Net Entity Data Model/Designer` supports in `.Net Framework` but not in `.Net Core`.](https://docs.microsoft.com/en-us/answers/questions/363546/adonet-entity-data-model.html)
+> [`ADO.Net Entity Data Model/Designer` supports in `.Net Framework` but not in `.Net/EF Core`.](https://docs.microsoft.com/en-us/answers/questions/363546/adonet-entity-data-model.html)
+
+To port an `EF6 Model` `EDMX-Based Model` to `EF Core`, regenerate a new code-based model using `Scaffold-DbContext`.
+
+#### [EF - Model First Approach Sample](https://www.entityframeworktutorial.net/model-first-with-entity-framework.aspx)
+
+#### [Port EF6 EDMX to EFCore](https://docs.microsoft.com/ef/efcore-and-ef6/porting/port-edmx)
 
 In this approach, (`EF Core`) we model our entities and database context as code-based similar to Code-First. Then either using Migrations or DB Initializer, we create the database.
 
@@ -119,10 +125,10 @@ Language : `C#` <br/>
 
 ## References
 
-[EntityFrameworkCore](https://docs.microsoft.com/en-us/ef/core/)<br/>
-[.Net Core Razor Pages](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-6.0&tabs=visual-studio)<br/>
-[EF Core - Razor Pages](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-6.0&tabs=visual-studio)<br/>
-[EFCore - Get Started](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-6.0)<br/>
-[EF - Model First](https://docs.microsoft.com/en-us/ef/ef6/modeling/designer/workflows/model-first)
+[EntityFrameworkCore](https://docs.microsoft.com/ef/core/)<br/>
+[.Net Core Razor Pages](https://docs.microsoft.com/aspnet/core/razor-pages/?view=aspnetcore-6.0&tabs=visual-studio)<br/>
+[EF Core - Razor Pages](https://docs.microsoft.com/aspnet/core/data/ef-rp/intro?view=aspnetcore-6.0&tabs=visual-studio)<br/>
+[EFCore - Get Started](https://docs.microsoft.com/aspnet/core/data/ef-mvc/intro?view=aspnetcore-6.0)<br/>
+[EF - Model First](https://docs.microsoft.com/ef/ef6/modeling/designer/workflows/model-first)
 
 ### :fire: Happy Coding
